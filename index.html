@@ -3,42 +3,62 @@
 <head>
   <style>
   h1{
+    color: black;
+    font-size: 60px;
     text-align: center;
-  }
-  h2{
-    text-align: left;
-  }
-  div{
-        text-align: left;
   }
   p{
+    color: #23527c;
+    padding-top: 5px;
     text-align: center;
   }
-  iframe{
-    padding-top: 20px;
-    align="middle";
+  a{
+    padding: 25px;
   }
-
+  b{
+    color: white;
+    padding-top: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
   .col-sm-8 {
-  padding-top: 20px;
-  height: 100%;
-  text-align: center;
+    color: white;
+    padding-top: 5px;
+    height: 25%;
+    text-align: center;
   }
 
   .row.content {height: 450px}
 
   .navbar {
-  margin-bottom: 0;
-  border-radius: 0;
+    margin-bottom: 0;
+    border-radius: 0;
   }
 
   .sidenav {
-    padding-top: 20px;
-    background-color: #f1f1f1;
+    color: white;
+    padding-top: 5px;
     height: 100%;
     text-align: center;
+
+    background-color: #222;
+    border-color: #080808;
+    border-top-color: rgb(8, 8, 8);
+    border-right-color: rgb(8, 8, 8);
+    border-bottom-color: rgb(8, 8, 8);
+    border-left-color: rgb(8, 8, 8);
   }
 
+.background{
+    background-image: url("images/background.png");
+    opacity:0.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
   @media only screen and (max-width: 500px) {
     .sidenav {
       height: auto;
@@ -56,40 +76,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+  <body>
+    <div class="background">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-inverse p-4">
+            <a href="mailto:nabreu@live.com" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-envelope"></span> Email Me!
+            </a>
+          </div>
+        </div>
+        <nav class="navbar navbar-inverse bg-inverse">
+        </nav>
+        <div class="container-fluid">
+          <div class="container-fluid text-center">
+            <div class="row content">
+              <div class="col-sm-2 sidenav">
+                <b>Check Out Meh Stuff</b>
+                <p><a href="https://hackerone.com/z1m"><br/>HackerOne</a></p>
+                <p><a href="https://www.linkedin.com/in/nicholas-abreu-01a8b2118/"><br/>LinkedIn</a></p>
+                <p><a href="https://github.com/Z-1-M"><br/>GitHub</a></p>
+                <p><br/><img src="images/Logo.png" width="150" height="150" position ="center"></p>
+                <p><a href="mailto:nabreu@live.com" class="btn btn-info btn-lg">
+                  <span class="glyphicon glyphicon-envelope"></span> Email Me!
+                </a></p>
+              </div>
 
-  <div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-inverse p-4">
-        <a href="mailto:nabreu@live.com" class="btn btn-info btn-lg">
-            <span class="glyphicon glyphicon-envelope"></span> Email Me!
-        </a>
-      </div>
-    </div>
-    <nav class="navbar navbar-inverse bg-inverse">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+              <div class="col-sm-8">
+                <h1>Welcome to my Domain!</h1>
+              </div>
+
+              <div class="col-sm-2 sidenav">
+                <b>Hello.</b>
+                <p>I would like to take the time to thank you for teaching me how to make this.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
   </div>
-
-<div class="container-fluid">
-  <div class="container-fluid text-center">
-    <div class="row content">
-      <div class="col-sm-2 sidenav">
-        <b>Click that Line Above!</b>
-        <p><a href="https://hackerone.com/z1m"><br/>HackerOne</a></p>
-        <p><a href="https://www.linkedin.com/in/nicholas-abreu-01a8b2118/"><br/>LinkedIn</a></p>
-        <p><a href="https://github.com/Z-1-M"><br/>GitHub</a></p>
-    </div>
-    <div class="col-sm-8">
-      <h1>Welcome to my Domain!</h1>
-        <p>Here is my schedual below...</p>
-        <iframe align="middle" src="https://calendar.google.com/calendar/embed?title=Meh%20Smedual&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=saa34v28lruhhl29icn3apub74%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <b>I would like to take the time to thank you for teaching me how to make this.</b>
-    </div>
-</div>
-</body>
+  </body>
 </html>
